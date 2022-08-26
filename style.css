@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+header p{
+    font-size: 10px !important;
+}
+#menu a{
+    color: gray;
+}
+#menu, button, input{
+    font-size: 12px !important;
+}
+.carousel-inner{
+    max-height: 42rem !important;
+}
+#servicios-fila-2 {
+    margin-bottom: 80px !important;
+}
+#bg-contactos{
+    position:relative;
+    top: -130px;
+} 
+#seccion-contacto{
+    background-color: #1b4e1e;
+    min-height:500px;
+    position:relative;
+}
+#contenedor-formulario{
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius:5px;
+}
+#titulo-formulario {
+    color: #3f3f3f;
+}
+input::placeholder{
+    font-size: 16px;
+}
+footer {
+    background: #e76800;
+    /* min-height: 100px; */
+}
+#iconos i{
+    font-size: 26px;
+    padding: 0 8px;
+    color:#f3f3f3;
+}
+
+/*PANTALLA ANCHA*/
+@media (max-width:1200px){
+    #intro{
+         width:80% !important;
+         margin:auto;
+    }
+}
+/*SM*/
+@media (max-width:768px) {
+    #intro{
+        width:90% !important;
+        margin:auto;
+    }
+    #bg-contactos{
+        top:-110px;
+    }
+}
+/* EXTRA-SM */
+@media (max-width: 576px) {
+    #servicios-fila-1 {
+        width:100% !important;
+    }
+    #servicios-fila-2 {
+        width:100% !important;
+    }
+    #bg-contactos{
+        top:-60px;
+    }
+    .icono-wrap{
+        flex-wrap:wrap!important;
+        justify-content: center!important;
+        text-align:center;
+    }
+    #contenedor-formulario{
+    width: 95%;        
+    }
+}
